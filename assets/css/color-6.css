@@ -1,0 +1,30 @@
+/* color-6 */
+.gx-btn-primary,
+.gx-primary-btn {
+  background-color: #e91e63;
+  border: 1px solid #e91e63;
+}
+.gx-btn-primary:hover,
+.gx-primary-btn:hover {
+  color: #e91e63;
+  border: 1px solid #e91e63;
+}
+
+.gx-topic-list ul li a:hover {
+  color: #e91e63;
+}
+
+.gx-main-structure i {
+  color: #e91e63;
+}
+.gx-main-structure ul li a i {
+  color: #e91e63;
+}
+.gx-main-structure ul li i {
+  color: #e91e63;
+}
+
+b {
+  color: #e91e63 !important;
+}
+/*# sourceMappingURL=color-6.css.map */
