@@ -1,0 +1,487 @@
+<!--========================================================= 
+    Item Name: Guidex - Online Documentation Tailwind CSS Template.
+    Author: ashishmaraviya
+    Version: 2.0
+    Copyright 2024
+ ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords"
+		content="guide, doc, documentation, api doc, catalog, code documentation, doc, docs, documentation, documentation template, documentation tool, getting started, guide, help, manual, online documentation, reference, specification">
+	<meta name="description" content="Planon - Self Service Webhelp">
+	<!-- <meta name="author" content="ashishmaraviya"> -->
+
+	<title>Planon - Self Service Webhelp</title>
+
+	<!-- App favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon/favicon.png">
+
+	<!-- Icon CSS -->
+	<link href="assets/css/vendor/materialdesignicons.min.css" rel="stylesheet">
+	<link href="assets/css/vendor/remixicon.css" rel="stylesheet">
+
+	<!-- Vendor -->
+	<link href="assets/css/vendor/prism.css" rel="stylesheet">
+
+	<!-- tailwindcss -->
+	<script src="assets/js/vendor/tailwindcss3.4.0.js"></script>
+
+	<!-- Main CSS -->
+	<link id="mainCss" href="assets/css/style.css" rel="stylesheet">
+	<link id="mainBg" href="assets/css/bg-1.css" rel="stylesheet">
+</head>
+
+<body>
+	<main class="wrapper sb-default min-h-screen flex flex-col items-stretch">
+		
+		<!-- Loader -->
+		<div id="gx-overlay" class="w-full h-full flex items-center justify-center fixed top-0 right-0 left-0 bottom-0 bg-[#fff] z-[999]">
+			<div class="gx-ellipsis inline-block relative w-[80px] h-[80px]">
+				<div class="absolute top-[33px] w-[20px] h-[20px] rounded-[50%] opacity-[0.7] scale-0"></div>
+				<div class="absolute top-[33px] w-[20px] h-[20px] rounded-[50%] opacity-[0.7] scale-0"></div>
+				<div class="absolute top-[33px] w-[20px] h-[20px] rounded-[50%] opacity-[0.7] scale-0"></div>
+				<div class="absolute top-[33px] w-[20px] h-[20px] rounded-[50%] opacity-[0.7] scale-0"></div>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<header class="gx-header h-[70px] px-[12px] fixed top-0 w-full right-0 flex items-center justify-center lg:z-[15] z-[20]">
+			<div class="w-full px-[12px]">
+				<div class="left-header h-[70px] flex flex-row items-center">
+					<a href="index.html" class="gx-toggle-sidebar">
+						<img src="assets/img/logo/SUN_logo-1.png" alt="SUN_logo-1" class="white-mode-logo w-[200px]">
+						<img src="assets/img/logo/SUN_logo-1.png" alt="SUN_logo-1" class="dark-mode-logo w-[200px]">
+					</a>
+				</div>
+		</header>
+		<!-- main content -->
+		<div class="gx-main-content">
+			<div class="flex flex-wrap justify-between items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+				<!-- Page title & breadcrumb -->
+				<div class="gx-page-title gx-page-title-2 pb-[24px] px-[12px] flex justify-between md:flex-row flex-col w-full">
+					<div class="gx-breadcrumb w-full flex md:flex-row flex-col justify-between md:items-center items-baseline">
+						<h5 class="m-0 text-[24px] font-semibold text-[#484d54] leading-[1.2]">PLANON Webhelp </h5>
+						<ul class="md:mt-[0] mt-[5px] p-0 flex flex-row">
+							<li class="text-[13px] text-[#777] leading-[21px] tracking-[0.03rem] font-light relative"><a href="https://phambili.sun.ac.za/" class="text-[#777]">Planon Login</a></li>
+							<li class="text-[13px] text-[#777] leading-[21px] tracking-[0.03rem] font-light relative">Webhelp</li>
+						</ul>
+					</div>
+				</div>
+				<div class="w-full flex sections">
+					<div class="gx-side-overlay"></div>
+					<div class="min-[1200px]:w-[25%] px-[12px] gx-topic">
+						<div class="gx-card topic-sidebar sticky top-[94px] mb-[24px] bg-[#fff] rounded-[5px]">
+							<div class="gx-card-header p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+								<h4 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Topics</h4>
+								<a href="javascript:void(0)" class="close-topic text-[17px] text-[#ff4f7f] leading-[1.2]"><i class="ri-close-line"></i></a>
+							</div>
+							<div class="gx-card-content gx-topic-list md:p-[24px] p-[15px]">
+								<nav>
+									<ul class="gx-sb-list">
+										<li class="gx-sb-item relative sb-drop-item py-[5px]">
+											<a href="javascript:void(0)" class="gx-drop-toggle hover:text-[#5f6af5] pt-[12px] pb-[20px] text-[#555] text-[14px] leading-[18px] font-medium flex items-center border-b-[1px] border-solid border-[#eee]">
+												<i class="ri-dashboard-3-line text-[19px] mr-[10px]"></i>
+												<span class="condense">Getting Started<i class="drop-arrow ri-arrow-down-s-line absolute right-[10px] text-[18px]"></i></span>
+											</a>
+											<ul class="gx-sb-drop pt-[12px] pl-0 condense">
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_instructions" class="gx-page-link drop hover:text-[#5f6af5] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Introduction</a>
+												</li>
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_gadget-setup" class="gx-page-link drop hover:text-[#5f6af5] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Gadget Setup</a>
+												</li>
+											</ul>
+										</li>
+										<li class="gx-sb-item relative sb-drop-item py-[5px]">
+											<a href="javascript:void(0)" class="gx-drop-toggle hover:text-[#5f6af5] pt-[12px] pb-[20px] text-[#555] text-[14px] leading-[18px] font-medium flex items-center border-b-[1px] border-solid border-[#eee]">
+												<i class="ri-file-text-line text-[19px] mr-[10px]"></i>
+												<span class="condense">Content<i class="drop-arrow ri-arrow-down-s-line absolute right-[10px] text-[18px]"></i></span>
+											</a>
+											<ul class="gx-sb-drop pt-[12px] pl-0 condense">
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_MyUser_PROFILE" class="gx-page-link drop hover:text-[#5f6af5] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>My User Profile</a>
+												</li>
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_process_workflows" class="gx-page-link drop hover:text-[#5f6af5] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Process and Workflow</a>
+												</li>
+											</ul>
+										</li>
+										<li class="gx-sb-item relative sb-drop-item py-[5px]">
+											<a href="javascript:void(0)" class="gx-drop-toggle hover:text-[#5f6af5] pt-[12px] pb-[20px] text-[#555] text-[14px] leading-[18px] font-medium flex items-center border-b-[1px] border-solid border-[#eee]">
+												<i class="ri-open-source-line text-[19px] mr-[10px]"></i>
+												<span class="condense">Logging<i class="drop-arrow ri-arrow-down-s-line absolute right-[10px] text-[18px]"></i></span>
+											</a>
+											<ul class="gx-sb-drop pt-[12px] pl-0 condense">
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_Logging" class="gx-page-link drop hover:text-[#5f6af5] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Logging a request</a>
+												</li>
+											</ul>
+										</li>
+										<li class="gx-sb-item relative pt-[5px]"></li>
+											<a href="#gx_struggeling" class="gx-page-link py-[12px] capitalize font-normal bg-[#fff] text-[#555] hover:text-[#5f6af5] text-[14px] leading-[18px] flex items-center">
+												<i class="ri-star-smile-line text-[19px] mr-[10px]"></i><span class="condense"><span class="hover-title">Contact Us</span> </span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="min-[1200px]:w-[75%] w-full px-[12px]">
+						<!-- Introduction -->
+						<div class="gx-block">
+							<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_instructions">
+								<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+									<h1 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Introduction</h1>
+									<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+										<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+											<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+										</a>
+									</div>
+								</div>
+								<div class="gx-card-content md:p-[24px] p-[15px]">
+									<div class="intro">
+										
+										<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">Welcome to Planon Webhelp! This page will guide you on
+											how to log a request and how to use your Home-page on Planon</p>
+										<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]"> Planon - Self Service User Module</h4>
+										<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+											After you are registered to Planon and you were granted access. <br>
+											<b>Please follow the URL below to start with your profile setup:</b><br>
+											<a href="https://phambili.sun.ac.za/" class="hover:text-[#5f6af5] py-[12px] font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><u>https://phambili.sun.ac.za</u></a>
+										</p>
+										<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+										<b>Login to Stellenbosch Planon with SUN username and password.</b>
+										<br>
+										<a href="https://phambili.sun.ac.za/" class="gx-btn-primary h-[35px] w-[200px] px-[15px] flex items-center justify-center bg-[#e7e7e7] text-[black] text-[14px] border-[1px] border-solid border-[#e7e7e7] rounded-[5px] cursor-pointer hover:bg-[#5f6af5] hover:text-[white]">
+										Login
+										</a><br>
+										<img src="assets/img/server/12.png" class="img-fluid rounded-[5px]" alt="Responsive image">
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+							<!-- Gadget setup -->
+							<div class="gx-block">
+								<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_gadget-setup">
+									<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+										<h1 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Gadget Setup</h1>
+										<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+											<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+												<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+											</a>
+										</div>
+									</div>
+									<div class="gx-card-content md:p-[24px] p-[15px]">
+										<div class="intro">
+											<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]"> Add the gadgets to your profile:</h4><br>
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Step 1:</b> Select the gadget wheel in the top right of the screen
+												<br>
+												<img class="img-fluid-[50px]" src="assets/img/server/edit.png" alt="edit">
+											</p>
+
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Step 2:</b> Select the relevant gadgets that will add the Self-Service Form to your profile
+												<br>
+												<img src="assets/img/server/add.png" alt="add" class="img-fluid-[50px]">
+											</p>
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Step 3:</b> Close the gadget wheel drop down.
+												<br>
+												<img src="assets/img/server/close.png" alt="close" class="img-fluid-[50px]">
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- My User Profile -->
+							<div class="gx-block">
+									<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_MyUser_PROFILE">
+										<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+										<h1 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">My User Profile:</h1>
+										<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+											<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+												<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+											</a>
+										</div>
+									</div>
+									<div class="gx-card-content md:p-[24px] p-[15px]">
+										<div class="intro">	
+											<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]">Gadgets on the Home-page:</h4>	<br>									
+												<div class="image-with-text">
+													<img src="assets/img/server/RM.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[400px] h-[560px] mb-[20px] m-[5px]" alt="Thumbnail image">
+													<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+														<b>Reactive Maintenance-gadget :</b> <br>
+														This is where you log your maintenance requests. 
+													</p>
+												</div><br>
+												<hr>
+												<br>
+												<div class="image-with-text">
+													<img src="assets/img/server/CP.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[400px] h-[300px] mb-[20px] m-[5px] " alt="Thumbnail image">
+													<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+														<b>Advisory Request :</b><br>
+														Advice request/required on a planned maintenance project.<br><br>
+														<b>Capital Project Request :</b> <br>
+														This is Where you register large projects that require an entire project team. 
+														
+													</p>
+												</div><br>
+												<hr>
+												<br>
+												<div class="image-with-text">
+													<img src="assets/img/server/MyRQ.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[400px] h-[300px] mb-[20px] m-[5px]" alt="Thumbnail image">
+													<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+														<b>My Requests-gadget :</b> <br>
+														This is where you search your request <br>
+													</p>
+												</div><br>
+												<hr><br>
+												<div class="image-with-text">
+													<img src="assets/img/server/MW.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[350px] h-[300px] mb-[30px]" alt="Thumbnail image">
+													<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+														<b>Minor Works Request :</b> <br>
+														This is where you log request for new installation, minor renovations and Small projects on your Reactive Maintenance-gadget
+													</p>
+												</div><br>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Process&Workflows -->
+								<div class="gx-block">
+									<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_process_workflows">
+										<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+											<h1 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Process and Workflows</h1>
+											<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+												<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+													<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+												</a>
+											</div>
+										</div>
+										<div class="gx-card-content md:p-[24px] p-[15px]">
+											<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]"> Process and Workflows</h4><br>
+											<div class="intro">
+												<table>
+													<tr>
+													  <th>Role</th>
+													  <th>Responsible Person</th>
+													  <th>Contact Address</th>
+													</tr>
+
+													<tr>
+													  <td>Requestor</td>
+													  <td>You</td>
+													  <td></td>
+													</tr>
+
+													<tr>
+													  <td>Assistance</td>
+													  <td>FM Service Desk</td>
+													  <td>Ext 4666/ fmhelpdesk@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>1st Line Check</td>
+														<td>FM Service Desk</td>
+														<td>Ext 4666/ fmhelpdesk@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>Estimation</td>
+														<td>Technician/ Team lead</td>
+														<td></td>
+													</tr>
+
+													<tr>
+														<td>Accept to be approved under R15 000</td>
+														<td>Nathalie Koen (FIN)</td>
+														<td>Ext 4659 / nkoen@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>Accept to be approved over R15 000</td>
+														<td>Annetjie Venter (FIN)</td>
+														<td>Ext 4912 / nkoen@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>Cc-owner Approval</td>
+														<td>Faculty / Departmental Cost Centre Owner</td>
+														<td></td>
+													</tr>
+
+													<tr>
+														<td>1st Line Problem Reporting (Systems & Maintenance queries)</td>
+														<td>FM Service Desk</td>
+														<td>Ext 4666/ fmhelpdesk@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>2nd Line Problem Reporting (Systems)</td>
+														<td>Ayanda Bangani; Jess Kruger</td>
+														<td>bagani@sun.ac.za/ jesskruger@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>3rd Line Problem Reporting (Service Desk Service delivery & Maintenance queries)</td>
+														<td>Claudette Mackriel</td>
+														<td>cmackriel@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>4th Line Problem Reporting (Systems)</td>
+														<td>ICT Task Team</td>
+														<td></td>
+													</tr>
+												</table>
+												<br>
+												<img class="img-fluid rounded-[50px] border-solid border-[#dee2e6] " src="assets/img/server/Workflow.png" alt="Xampp">
+											</div>
+										</div>
+									</div>
+								</div>	
+						<!-- Starter Page -->
+						<div class="gx-block">
+							<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_Logging">
+								<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+									<h1 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]">Logging a Request :</h1>
+									<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+										<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+											<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+										</a> 
+									</div>
+								</div>
+
+								<div class="gx-card-content md:p-[24px] p-[15px]">
+									<!-- Presentation code -->
+									<h4 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default"> Explaining the fields on a request:</h4><br>															
+										<div class="tabs_wrapper">
+											<ul class="tabs inline-flex w-full border-b">
+												<li class="px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer active" id="tab3"><i class="ri-eye-line mr-[5px]"></i>Request-Gadget</li>
+												<li class="px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer" id="tab4"><i class="ri-code-s-slash-line mr-[5px]"></i>Request Fields</li>
+											</ul>
+											<div class="tabs_container">
+												<div class="tab_content w-full pt-[30px] active" data-tab="tab3">
+													<div class="image-with-text">
+														<img class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[475px] h-[600px] mb-[20px] m-[5px]" src="assets/img/server/RM.png" alt="Xampp">															
+														<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+															<b>Before Logging a request:</b><br>
+															Understand the details of Incident/Request. This will help you to choose the exact type of service category on the request gadget
+														</p>
+													</div>
+												</div>
+												<div class="tab_content w-full pt-[30px]" data-tab="tab4">
+													<div class="image-with-text">
+														<img class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[500px] h-[640px] mb-[20px] m-[5px]" src="assets/img/server/RQ.png" alt="Xampp">															
+													<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">	
+														<ul >
+															<b>Need to know :</b><br>	
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold"> Requester:</strong>
+																The person who logs the request is the requestor
+															</li>
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold"> On behalf :</strong>
+																Colleague who reported the request. (Requestor can also be the On Behalf-person)
+															</li>
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold"> Location & Space:</strong>
+																Use the exact building and space where maintenance is required</li>
+															<li>
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold "> Cost Centre Information :</strong> New installations only</li><br>
+															<b>Request Information</b><br>
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold "> Questionaire:</strong>
+																Answer the questions which applies to incident or request. This will help you with the comment-section of request form.
+															</li>
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold "> Comment Section:</strong>
+																Ensure that you give a short but comprehensive explanation of the maintenance required and include your contact information and alternative staff member's in case your not available.
+															</li>
+														<br>
+														<i >
+															<b>Important: Location & Space</b><br>
+															<u>Tip:</u> Search using codes or by name or description.
+														</i>
+													</ul>
+													</p>
+												</div><br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Customization -->
+							<div class="gx-block">
+								<div class="gx-card gx-page-block server m-b-24 bg-[#fff] rounded-[5px]" id="gx_struggeling">
+									<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+										<h4 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Following up/ Escalate with a Request:</h4>
+										<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+											<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+												<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+											</a>
+										</div>
+									</div>
+									<div class="gx-card-content md:p-[24px] p-[15px]">
+										<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]">Contact Us:</h4>
+										<ul class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light note mb-[15px]">
+											<b>Follow-up with FM Service Desk</b><br>
+											<li>
+											<i class="ri-record-circle-line"></i>	
+											<strong class="font-semibold ">Phone :</strong><br>
+											021 808 4666
+											</li>
+											<li>
+											<i class="ri-record-circle-line"></i>
+											<strong class="font-semibold ">Email :</strong> <br>
+
+											<a href="mailto:fmhelpdesk@sun.ac.za?subject=Follow-up ..." class="h-[35px] w-[200px] px-[15px] flex items-center justify-center bg-[#e7e7e7] text-[black] text-[14px] border-[1px] border-solid border-[#e7e7e7] rounded-[5px] cursor-pointer hover:bg-[#5f6af5] hover:text-[white]">fmhelpdesk@sun.ac.za</a> 
+											With the Subject line “Follow-up” with the reference number:<br>
+											<strong class="font-semibold ">Preferred</strong> – Email for tracking purposes. Always include reference numbers.
+											</li><br>
+										</ul>
+										<ul class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light note mb-[15px]">
+											<b>Escalation: Feedback unsatisfactory</b><br>
+											<li>
+											<i class="ri-record-circle-line"></i>
+											<strong class="font-semibold ">Email :</strong> <br>
+											<a href="mailto:fmhelpdesk@sun.ac.za?subject=Query escalation / Complaint ..." class="gx-btn-primary h-[35px] w-[200px] px-[15px] flex items-center justify-center bg-[#e7e7e7] text-[black] text-[14px] border-[1px] border-solid border-[#e7e7e7] rounded-[5px] cursor-pointer hover:bg-[#5f6af5] hover:text-[white]">fmhelpdesk@sun.ac.za</a> 
+											With the Subject line “Query escalation / Complaint” with reference number:<br>
+											<strong class="font-semibold ">Preferred</strong> – Email for tracking purposes. Always include reference numbers.
+											</li><br>
+											<li>
+												<i class="ri-information-line"></i><strong class="font-semibold ">Obtaining feedback may take some time. Please be patient with us</strong>
+											</li>
+										</ul>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Vendor Custom -->
+	<script src="assets/js/vendor/jquery-3.6.4.min.js"></script>
+	<script src="assets/js/vendor/prism.js"></script>
+	<!-- Main Custom -->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
