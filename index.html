@@ -1,0 +1,834 @@
+<!--========================================================= 
+    Item Name: Guidex - Online Documentation Tailwind CSS Template.
+    Author: ashishmaraviya
+    Version: 2.0
+    Copyright 2024
+ ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords"
+		content="guide, doc, documentation, api doc, catalog, code documentation, doc, docs, documentation, documentation template, documentation tool, getting started, guide, help, manual, online documentation, reference, specification">
+	<meta name="description" content="Planon - Self Service Webhelp">
+	<!-- <meta name="author" content="ashishmaraviya"> -->
+
+	<title>Planon - Self Service Webhelp</title>
+
+	<!-- App favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon/favicon.png">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Icon CSS -->
+	<link href="assets/css/vendor/materialdesignicons.min.css" rel="stylesheet">
+	<link href="assets/css/vendor/remixicon.css" rel="stylesheet">
+
+	<!-- Vendor -->
+	<link href="assets/css/vendor/prism.css" rel="stylesheet">
+
+	<!-- tailwindcss -->
+	<script src="assets/js/vendor/tailwindcss3.4.0.js"></script>
+
+	<!-- Main CSS -->
+	<link id="mainCss" href="assets/css/style.css" rel="stylesheet">
+	<link id="mainBg" href="assets/css/bg-1.css" rel="stylesheet">
+</head>
+
+<body>
+	<main class="wrapper sb-default min-h-screen flex flex-col items-stretch">
+		
+		<!-- Loader -->
+		<div id="gx-overlay" class="w-full h-full flex items-center justify-center fixed top-0 right-0 left-0 bottom-0 bg-[#fff] z-[999]">
+			<div class="gx-ellipsis inline-block relative w-[80px] h-[80px]">
+				<div class="absolute top-[33px] w-[20px] h-[20px] rounded-[50%] opacity-[0.7] scale-0"></div>
+				<div class="absolute top-[33px] w-[20px] h-[20px] rounded-[50%] opacity-[0.7] scale-0"></div>
+				<div class="absolute top-[33px] w-[20px] h-[20px] rounded-[50%] opacity-[0.7] scale-0"></div>
+				<div class="absolute top-[33px] w-[20px] h-[20px] rounded-[50%] opacity-[0.7] scale-0"></div>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<header class="gx-header h-[70px] px-[12px] fixed top-0 w-full right-0 flex items-center justify-center lg:z-[15] z-[20]">
+			<div class="w-full px-[12px]">
+				<div class="left-header h-[70px] flex flex-row items-center">
+					<a href="index.html" class="gx-toggle-sidebar">
+						<img src="assets/img/logo/SUN_logo-1.png" alt="SUN_logo-1" class="white-mode-logo w-[200px]">
+						<img src="assets/img/logo/SUN_logo-1.png" alt="SUN_logo-1" class="dark-mode-logo w-[200px]">
+					</a>
+				</div>
+		</header>
+		<!-- main content -->
+		<div class="gx-main-content">
+			<div class="flex flex-wrap justify-between items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+				<!-- Page title & breadcrumb -->
+				<div class="gx-page-title gx-page-title-2 pb-[24px] px-[12px] flex justify-between md:flex-row flex-col w-full">
+					<div class="gx-breadcrumb w-full flex md:flex-row flex-col justify-between md:items-center items-baseline">
+						<h5 class="m-0 text-[24px] font-semibold text-[#484d54] leading-[1.2]">PLANON Webhelp </h5>
+						<ul class="md:mt-[0] mt-[5px] p-0 flex flex-row">
+							<li class="text-[13px] text-[#777] leading-[21px] tracking-[0.03rem] font-light relative"><a href="https://phambili.sun.ac.za/" class="text-[#777]">Planon Login</a></li>
+							<li class="text-[13px] text-[#777] leading-[21px] tracking-[0.03rem] font-light relative">Webhelp</li>
+						</ul>
+					</div>
+				</div>
+				<div class="w-full flex sections">
+					<div class="gx-side-overlay"></div>
+					<div class="min-[1200px]:w-[25%] px-[12px] gx-topic">
+						<div class="gx-card topic-sidebar sticky top-[94px] mb-[24px] bg-[#fff] rounded-[5px]">
+							<div class="gx-card-header p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+								<h4 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Topics</h4>
+								<a href="javascript:void(0)" class="close-topic text-[17px] text-[#ff4f7f] leading-[1.2]"><i class="ri-close-line"></i></a>
+							</div>
+							<div class="gx-card-content gx-topic-list md:p-[24px] p-[15px]">
+								<nav>
+									<ul class="gx-sb-list">
+										<li class="gx-sb-item relative sb-drop-item py-[5px]">
+											<a href="javascript:void(0)" class="gx-drop-toggle hover:text-[#921c1cdd] pt-[12px] pb-[20px] text-[#555] text-[14px] leading-[18px] font-medium flex items-center border-b-[1px] border-solid border-[#eee]">
+												<i class="ri-dashboard-3-line text-[19px] mr-[10px]"></i>
+												<span class="condense">Getting Started<i class="drop-arrow ri-arrow-down-s-line absolute right-[10px] text-[18px]"></i></span>
+											</a>
+											<ul class="gx-sb-drop pt-[12px] pl-0 condense">
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_instructions" class="gx-page-link drop hover:text-[#921c1cdd] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Introduction</a>
+												</li>
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_gadget-setup" class="gx-page-link drop hover:text-[#921c1cdd] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Gadget Setup</a>
+												</li>
+											</ul>
+										</li>
+										<li class="gx-sb-item relative sb-drop-item py-[5px]">
+											<a href="javascript:void(0)" class="gx-drop-toggle hover:text-[#921c1cdd] pt-[12px] pb-[20px] text-[#555] text-[14px] leading-[18px] font-medium flex items-center border-b-[1px] border-solid border-[#eee]">
+												<i class="ri-file-text-line text-[19px] mr-[10px]"></i>
+												<span class="condense">Content<i class="drop-arrow ri-arrow-down-s-line absolute right-[10px] text-[18px]"></i></span>
+											</a>
+											<ul class="gx-sb-drop pt-[12px] pl-0 condense">
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_MyUser_PROFILE" class="gx-page-link drop hover:text-[#921c1cdd] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>My User Profile</a>
+												</li>
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_process_workflows" class="gx-page-link drop hover:text-[#921c1cdd] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Process and Workflow</a>
+												</li>
+												
+											</ul>
+										</li>
+										<li class="gx-sb-item relative sb-drop-item py-[5px]">
+											<a href="javascript:void(0)" class="gx-drop-toggle hover:text-[#921c1cdd] pt-[12px] pb-[20px] text-[#555] text-[14px] leading-[18px] font-medium flex items-center border-b-[1px] border-solid border-[#eee]">
+												<i class="ri-open-source-line text-[19px] mr-[10px]"></i>
+												<span class="condense">Logging<i class="drop-arrow ri-arrow-down-s-line absolute right-[10px] text-[18px]"></i></span>
+											</a>
+											<ul class="gx-sb-drop pt-[12px] pl-0 condense">
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_RM" class="gx-page-link drop hover:text-[#921c1cdd] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Logging a Reactive Maintenance request</a>
+												</li>
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_CP" class="gx-page-link drop hover:text-[#921c1cdd] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Logging a Capital Project request</a>
+												</li>
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_MW" class="gx-page-link drop hover:text-[#921c1cdd] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Logging a Minor Work request</a>
+												</li>
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_AD" class="gx-page-link drop hover:text-[#921c1cdd] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Logging a Advisory request</a>
+												</li>
+												<li class="list pt-[5px] pl-[22px]">
+													<a href="#gx_notifications" class="gx-page-link drop hover:text-[#921c1cdd] py-[12px] capitalize font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><i class="ri-record-circle-line text-[12px] mr-[10px]"></i>Notifications</a>
+												</li>
+
+											</ul>
+										</li>
+										<li class="gx-sb-item relative pt-[5px]">
+											<a href="#gx_struggeling" class="gx-page-link py-[12px] capitalize font-normal bg-[#fff] text-[#555] hover:text-[#921c1cdd] text-[14px] leading-[18px] flex items-center">
+												<i class="ri-star-smile-line text-[19px] mr-[10px]"></i><span class="condense"><span class="hover-title">Contact Us</span> </span>
+											</a>
+										</li>
+										<li class="gx-sb-item relative pt-[5px]">
+											<a href="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=WO%20Flow%20and%20PO%20Flow.drawio#R%3Cmxfile%3E%3Cdiagram%20id%3D%225KSqhOPL4qbZewQe10kY%22%20name%3D%22Page-1%22%3E7V1Zk5tItv41ims%2FVAUggdBjlbxM37C7asqe8Mx9mUihlEQbgRpQLf3rb64smScBqUBSdXg6xiohluTk2fIsX47G8%2B3z5xTtNl%2BTJY5GjrV8Ho0%2FjBxn7E4s8kGPvPAjvuXxA%2Bs0XPJDdnngW%2FgXFgfFdet9uMRZ7cQ8SaI83NUPBkkc4yCvHUNpmjzVT1slUf2pO7TG2oFvAYr0oz%2FCZb4RRz13Uv7wDxyuN%2FLRtjfjv2yRPFu8SrZBy%2BSpcmj8cTSep0mS87%2B2z3McUepJwvDrPhl%2BLUaW4jjvcoHDL3hE0V683MghkzEmpB7fiiHmL%2FLFnzZhjr%2FtUEC%2FP5HJJSdleZr8LOhgkyOrMIrmSZSk5HtEqXC1ROnPd%2BSuK%2Fa%2FkTMf0WGN7aUzGy%2FeF0%2BqDlu8ySNOc%2FxcOSRe4zNOtjhPX8gp4terkv6CrWyXf32qztFEnLOpzY%2FkSCQ4Y13cvqQd%2BUOQDyZl%2BO%2FN3PqcPn%2F9mDx8%2FCsNM8v%2B15Xtzv5GFLY8q0Zhb2xpJPanvk5h1x6KwHIEdfpG5Lm3G7tGW%2B%2FPPZWq2y1K12F8lSeEtjfkDGv3zOgjfyd%2FrennjyT9SX6%2BS5c4JZ%2BfIiKnhKj0Gn5%2FMl76CH62NpOEqGwQ%2BTYSswbNbULIv4qYBtiEyyWOybE02cdLTF%2Fa6k007PrETfR5cyQlq%2FM2mFyMx8C0KRTES6J1xdckzTfJOolR9LE8qlCqPOdLQieXEf0PnOcvwoSgfZ7Up8RI3CzZpwFuegFpeAg34bzpRPFi9G0aJyvFEcrDx7qN6Z%2Fwtkb4B7wjpCNk1CYgiohJxQbWrZCxqo%2B4EnKCoNBclV%2BW3sJzvaG42rZ1trYdgK39wdjafets7XRl68llsbXuyNwEeAdx9WG8jO2li6cQL8%2B86Rj1xsuTscLLTkde9gbj5elb5%2BVJV172LoqXPV2JfMzykKwdML00o%2BuIJCV%2Fe2hLmTdeZDvutzC3ZBk%2BSqfk%2BwbF5OwH6gnPLcuqeC6Vs8BZ%2FYIWZNVWmwlEXE3in3wIyEwQl2h8S%2Fk7JMuiG%2FHDlngwfNJxFv6FFux%2BdNp3SRjnjEzu7cj9AM5qMw%2BqklQs7sRTRtXlEyRh1rXlT92aiF2JO3WeVXHze%2Fo2lVOS1Soj%2FKVOezGG4zlhAjm3pxdBMkfpy7%2FF9ezLf6q%2FfHiu%2FvThpc1xPUpw9y%2F%2FO8YP%2F8z2N%2F9Nsb1Ngv%2Bz%2Fns17VtulRmW2nk2qytnx1KULh%2BpuKx%2FPvC8Vo0Q4SzroBHyt64RCpF4tUa4Iiph%2FOZUgpSNCivcLXIU0ln9xP%2F9Sv652e3ShJyjzWS6SbaLfXawT79E2F%2BBPr0X%2BHix6ssPclSf3gL8IBvwg2xVJo%2Bxx6CWmZ1F5z6HOVO514RF%2Bdf%2FVH4qdS790oPK9c6lcl%2Fno%2BqKsZSGRjk4kPtd7C8nEPf7zmLs9bUKUO0MEKY57RpgchlhGikMdkUSrGv39bLQxOKty4ZJ75Edg%2FvhT1vcD%2F5KfbgfIEFs3eZwuYJiRsN7CqskzuHotz31lpS%2BIvqNl%2FQ%2FOPrdzO69OBe%2BZ9dN2aX7FpPLiF7Byw0h7w0LDvbtHqchoQPlsVeaRCne7XrgVMuQseIbOWpWpb9lCKwHpmf1hGrKf9qs%2FUseKtlm2EUrxC4wFe1B2OUmTdFL5QShN83cNPUVblJTxW0XTGy%2F%2BQLbUv2Z%2BhXkDz7qfrWYHgqez6%2BSp5il8YyG69AUB%2FYMKY7pbGH1lbibuspqaArktE%2FrEUL57HMuj6qrI6tZJ5AvPZqHzm6ifxny7rqwF2kU35YLhpFeV89PnoO%2FTsAXkrqXxhcT%2F0C%2BUC54NV%2FAVtO%2FHDXTHISB1MwZ3BGADS%2FaHdG4ymthQ9278E6gnyZ6VvQmy8gaFnAp9MKtCmtlG7Sj522f17RK8ppWAQUblObXSxyEWZjEhhgtXf5KtrfOFqh1FWdwDNReeIBjIh2Y%2FivtvMl5NcQBcdqKOpjW9IE1nD7wz2uWAIG3FN%2FW6baaPVizTBRWtdscH%2FUCt2fHB9TDRUXw5Ru4vo3ZuWxUO0%2BqhWKGQCtknFT9OJ1eK6qvL%2F52bXDQZv9NLQa9UEvra5b2juZ1%2FkHL9Q9cvQMl1M1WdOUHGF7fL3x34va1vneVyP7ZEz6uTvRzqKXj7Zw0X%2B127myZTFjFnTnLfEAY5eRrGWhOL3st8zY0rKRrRdh%2Foxr2Pk3WKasn%2BntqWRdoWzmtmvV0yr8xNds5yjU7l5ptHHeF8N9xsIlpKjqiw5gn212EaV3d34P3id95Ybxvu%2BdJI57ebM06yog3viwZ0VM8X1GM1jgNTy0kp6o6lDnDixESyRLVMONyy%2BrajMTv3K51%2BDScpvzNdurTUCy%2Fq%2B2lp2znmjrtZlrGcXdpElCfqZX6CxT8XDN1drfPozDGo3qJVIRXeV8EVTvkHKiadgKQ1B2MpFBFIa9Bp0xYo63syKVEupKjoy27dMLdEdS0O0dsCHNeZkY15mOIad9uvsHs6597nOWmQnnyRnwQsgy%2BUj8PjIu2%2BF6JaaPDKmZOHZW80T5Sj0SheqQPKtzsdkxPy3su5A%2F3aZikYf5SeeGFOgADEchhfbDDDP%2B3OCM8Do1%2FntDJK6YXnsVFWhkUP4P%2FS668CQIiefllvz9PKEHv%2Fx2jLTn%2BBaNlX69ADups2dIO0rvOM5aFsi59bp64Y2f35RjbE7W2ZgboximgG3vpNICVo15oe6gOKihp1kLZjvUA6fcqZ%2Bkq4Cae3jFPUZxJWlMZqvxWKb9N14t3Fi%2B9lR%2Fv%2BSf9xXFd%2FqX6x%2Fv3jePszvVkyhhxC22fCNAGFC8hMULLNvHhNGoWioEmxkAELBq%2Brt%2FcyEG9fHGvYFTcZnZ3KJAL4%2BWZ%2FKyyPG1eZUcrfxhY%2FhOROdrFt0JhtE%2Bpp%2FKU7GmawyKadoepuCYx82JYs1%2BWo3xP%2FwhX3LVhlyD2b5zQ%2B4j7hXHh%2BgTcdAbSdDYZimJS2pjtpEZCuFeqMYBNRj%2FrEa0CrkjitTnQtuWo%2Bb7%2BzITe9QQJ4o8NLqdfm9pKs%2BA8whTqBpxpk58MySggoNXTMiyYkvLhKqH6OQiKwlxUdGrN5TlrnDNux0yL5xvCG%2BsN9C5fWfPIExeAnArA3fyTyVQIaWFPYNKEQypB5fN0c1HUDFsJX1T8gQMGLQE%2BYQG63orrat3R9%2B5DmZ9I7E7nmc2m9rVT78t1ZqDgQQVGA3pnECBG1Xh0EbuS40HeMfFeZjjf8JQfd1L5GwVhbr4aBXmYVNcf1SuFqyWEUruWclPXd9sS%2FqRQe0Jm7yMU08caxDYMNqWnF2xQzK80EeB%2FqoYSpl0CyulcUUlGOefOpTTUKQ4wDc2S4wZ1i%2BKA%2FvyA%2F9yHWShI%2FPt%2BuzByw7v76CpmJ7wnmsL6zq3%2FTiQPk5hovCWose7p%2FAfMzaehZ%2FJ3ionvuLxu0OiQ%2FjFGQyDfqS%2F3z7B0Nbl%2FBwzlDvKhSjKWJiFIttuQafi6K0WkqU1ldxn9mTylPpTzVO1FhUpWQL08G0wvQzUrnPC7JvYg%2BiYoVYgC9%2Ffux9176XVvWMURd7Zfkn3hamv89YSIWMfrwr3J6Btu%2BJHiQBJjiIWogN%2FSu2b70o0J4yDaL41KhQh1xkbIH7fb5%2BLxYa6OvTRJKY7wI2IaZBXiCNRu1%2B0MrZG2kda6PmQjxs%2BIJjPqoIpVDfhDoShTaWH8mIQBHmyQNMtBnymiD%2BGuPr76z2Q8N2Q4lMhBlGR8sIKl7kbgEo2s5BlXUzvLLMb9PiUGLcOS%2FzKm%2BxkDoixLghBxXfREPFU2u5RZfouznEVEqCXfIsa9oWgUJveRpXKHUelMzmTR%2FT2EyvIn6ipO01hgqfpwqLBTEBQWWJ91N9ZvLqhXrjxN%2Fplw9QCtV8vplIZ8VRxTBaqQpwZHTnfVi0TrQa43ZEfAGyRx0ODBMheOOSMr4jpGRCZaNTW0WtQU3qHK7Sv6WbVKnLzcuxZ6mIoN0zkLzFY%2B2X5BnCeusZgV4xdxDzikK3yrNvn8JBwrj5Cvv0NhTYl11ekHhvJkCM%2BWn0eG8mA6%2F0BpTE1DM61%2FWwlLz94%2BxVsUxowEZLElDDvgwRbxEiEwcZKzyaAXcr2NCxeAO7ByJVEs9KjlwllB%2FFWxWElri5VYLFYqS0shPNSpQNVb1OwW86F7NNeHTS3FBqU0opjD%2FPPIqWXT86NgTCQKMqSeoG%2B62OcVA8%2FFojTz9FK0ppOaizmjD%2Fydsr%2BMAMvl5AKXVFUEaV5GclNsIKpBYIYy76cLDjnS25cQ5IAxdz3dmGtYGb0Zc78LRlK8vKEbD5BvMfX%2FydIVZRtWzqa0BdLj94hozzRmRwi7jtSKHWek1sOVddzjyagKk2GPW3Ayju2JfxU4WGWyXMDxksdeDds4tq6Vyi5brdjq3NED3awjDOTB9ePQs9wTFIQXL1Qt%2FavE1lWuvhhUyEIG%2B8CJnUoBfi3%2FKcVX4%2FoNhsNx8qH80Ik1klGJXIpysJVWv4lqIA7o9VPmWdUxfakF9UGyTLXzyOQ7DqxEdBixt6FEpNj0oEQmrtzhoh%2Fwt8Iy1G%2FqnEyldAGDP52T49fa1a5932v2csraf9%2BtN9xfe0fByg3iN%2FW36cKpHCwVF9tWSh4669CpEqOz1Zru%2FnSoWtMxaVWiKlDaKXCQZkATxptQor0h9l8RObetuhd8Ne6Fce36GtI%2BmWc20z2z73D4r1bzyJNH3wKiTPeRMVvMc7ws4jBqCIEa6lPQUoSY0EgN%2B7CFfi0EAQQ5TXnRNkT6YiBpW9ZUu1SNYmnvtMYxTis02ZU0yfbrNS2prLwgnJO7WfF6HVN4uJrw2aJ4ifKEcTHLrfHoHDhbPJHIc%2FQs%2FlKGeYzvcVgkWuWAiyjma6veKzTSAO0wKpqiBwSP4Irvwfq8Zt1qirooiaYcCmroKGDdryHjwzLFip%2Bpc8Zi9d9TtMQ7nGbG2hzGtFS%2BftyZg7xDMdQ5M4sTpRhibINlatDOesNxlLkaAp70VfiMq0VE1ck1aJaijQq8qCWdlin2o1EtQYaik%2BVoVXDd739UzkHkGijx%2BeeROQeZOBJpgkphF8sQiLouykjCTonk0I4iybVkXLoR7hKm4DX3vxTL1l9dutrTP%2Bm676E9WBLEtjoECOrL%2BRYyq7Vsh295O2zP%2BMSpT4InF%2BfncyZs2wNXhheIIWecgVZUBdvqCqtQcPuF4CoUI6%2FISMVH%2F1ZZkSiTqO8l3H1lD4lZ%2FzsMj8sCfSkPMoJRlQcZGq7Kw3g4cdCzWZ%2BLlRSwQH5zVJ8oGaapC9Ac8j4HpLl7DhX0CnUiN7dpVydSfC9FnQDb8tR7C76wsMab4%2BrxTNEkkGW1TsvV5mX6K3eZB8J0b3qneUsJ5HvQVvMQiMtgxba2d95ta67Ho2quatY5VTV2RrVMlUUEviVVZYKe72%2FbC9vuCiRt273ry%2BNSPr6sB5P4uGJpYsz4%2BK7TdMGrEz4w%2FvNZubS6s95gnjvEOjAtet9c%2FjjOmfr1RJHfVnAxsadNFwxUcGHrIb8HvCPcAO3P1xUk7DxIbP6sLnpTG7D9UGhjMAywApTszWJ1Foq4XWV3LtI6lYurr5jLRtp7HrFj0dHWNGO5EWynqOCBu4G1Y3muU7QMcblxJd2eEnmL3rDzfKUUw3c7xgSHi0Y5bx1LvBCHDoJzWfsiFyPvsmXrRW6FrBYEzaZn5%2BfxmzcETtdCM3t8YYbAGQq3%2BTzcXQDMXhB3AxqjN8TZ81DZUQJJM6De46R4svZEJ%2FLnh1GBPLRMTh6wa8irIfpfmVdbOSsbg3m1fhW%2F4yiZBNsCpMM%2FaSah087YQ5c%2FHwlgfsweH6%2BwMZPuPtOFdYRM1Q3JCr47vJzZspVbqYDKB9cz912KagM7GVbabttC2lawLQ%2BlAtX22t1VTlwkeZ6Qs2686wn%2FoVrO8UmuvcTZPM9%2FM7GvfX4yw3AMiQBQFry5cibXHjteB9K1rQmH0d1myVUUZvRYRGhtRfgRR1S2olViV%2BPuVhChLKu92dcs%2BT1Jt2x1eChoKi37uMqYs3ZjT66tpjGyc1doGxKXhUX3%2BapV3OkmZc3x9YNE%2F2Yozq4ynIYrIwnJu68QRYMht689Q97zqLd6RORq8hnvt%2BTpAU9kxJxQjJK1s9jTUUaLyppPRBGrLaSVYPCJlJpXaPnHns0mO4PpU%2Fn7T1w201vCQZa%2FJTtmCek9TKesMMr3KSYkZXA5plGw4dJMWqcTyecuEZm3Fjptkz9C05vnKc6DTQNd%2BE9TIU6WhiqtXVRhN0tlru%2FhlpXj%2Fc7gNB6SLYo1%2FoOSVnq8xbqEQweBVRoOGyVCo3Qh1RClhdxR30kV30PxZ5Wpt21DJvGBF2WyGt4oWcua9wdc4A9wcPwOoOnmmjsDcIOBwGbkgYGd2iHwwl2t2QlYs0Fp6QEzmx1whGq1vlD1pAlmJ4wfaTnSmlfLHFAdXG8OaUDcQUsYvVDvPmGAWLSkNTOB6TCYLXZhymAOFX4brMqzlyWPEutyAYQqEFNvuIUquPNJ576E2%2F2LceolwAkw6xzW6aAWl7tGBhMgpRXAYYky3FYa3RVZ8gAdeTh%2BJSv2FuLJqr01JGQD8DH%2FkyN%2FShBTDhk30vEvNazQLN8HDEwuVp%2FAabgMVyvM%2BJ1KHEUgzNjNv1dmd5%2BhPQ%2FM0daTrLUU%2FSj6nGYWdI0a7kCuY%2BaZtuREGDHFFld6ukp4K%2Fptv4sS1tj3Z7LnHRFM1QlcLYo%2BuqehTVnHlSjAUa96tzeHFMcHyb0W8arWA60znFv0WdYV9YrI%2F%2F9JaQnrgzZH5QxtCY33r7zx2vDGjnxjA3zeeZsfevG41FqyKbAfGAi%2BP9z2VXbD%2FlU743x2w9qXqn6HU6JotyMD6OvnJGHa5YECTu8MWxkJVd2ChmihHDAI%2BxqIKeQXCtQ%2FaljCJcc9eykuqDQlZo29XaMmwLeb%2Bsgo1neJWF41jJ1xtwEqxE3g26s02RYG9d2%2FvklAQCRsMDOIErWtYqQDYg8JVVIMejnJImIu9RJ66qWhts16kmRf6ZOcQQ4u2LA0oIerV08L5H5Y6h5G8CIoLBM3KoOaPF0aj9qiXOYuKX9tUSwcJpAXt8lj4Ttot8tridACjbBjQ%2F5QzHW27SPciZo%2BgiDKoUTCcMnVKZQ%2FUjTe9xZdXdUxDHqSuNUpS3iY592sX%2Bue7oHNraJrdezLzyObWw3Lx5TYnxUmWntZqtgmg5nEjAIqZGYNX7eGRwpjvQu0zihLRgWWbVdCnw9ZW1HXA3ad2nW58qG9REElPqA3Zs5hlcu1zrvHaZdKoOmnxOizGZrdt%2FUNk18PJX1wlzy0NDlwGdK40NXOvsXE5zS9oW606LKShfiEs5nonih0J6pQdkzER5VFNQdT2aBHGSXBpY9W%2Bquw%2BWwHIq9EU8QItZswg0%2BRqtvcuo5TcPzsvQb8WmxnNz52GzudgyV6gYmLGKhBCW%2FNyAjtdAcq2qbdbPqi89l87x43OnVqetvrihZQbJTQv972odbFbEdXThQdjDCCwJsR69hvnA3mzujG0ufkKdxGiGWI1X3Mg00YLb8goh7oOxFmCn7Kb7ebJA3%2FIuejclt0lErqO17tjG%2F0SnFPBpWG7%2BWc2Mqhr%2Bi5duIXRLPYfDRJFKEdf0V%2BIa99uBWFEuwkLQ9W5YlJXzzhKQWIU1%2FvHHbA0MrYG4wpdCe5ktOEE4haLdrSW3gunTy1RH%2B1cniJPhFVomy%2BsGXJh0l55EG8JD0EN0sSJjRC5N3SqCctsXI%2FUC3p3trld4afR%2Ftx5oTBieEL2cTReokniqJTn2KnXafoHNAiZe2MIXOaXjcuGK7SDsAuVvd0v1ljUTTVhSFm3nSMAIbA9tLF018M0cwQ7vkZAqr8Zh59xDz6jmxQdKkZ%2B9p%2BsYGZDfyzs8FMr5zWo%2BodeaGoVzaWpf%2FiBTMvFChDZ2QGHdhlHozEnrrUQvCcd5p1dxums4Wl1sMztwF7v9yGVpaYnJ0lpP%2BqNwixyqeObFC0axobPH%2BxQQMbTM%2FOBrJ9vMIGohjJevetHmaolMvUa4Pe%2F2KXCrsc1rjc20LEOiErwRgUGiNpbHGyjp%2BixeeQfp8r69qy6tgz%2FqwZ2%2BPoXQ3AaZdxp1a4jwvbNmrq1WMjGo91bgNS897a%2FgiGLqC%2BMGX0WpVL20OgUfT62MypQH%2BSOwi8ciOWXvcIAN9eD42eT%2FFYoxoCVetWKQCaUNl22HerodxMoQNy34VrGP%2F4RkMFAdJXY%2FYDaxg9ZCs2ZRA5VY5PLVyui1U4JvfkGIXjyeXxm1E4cvuTvwlqcNcdlmBanA33Ah4OlBL5gzAkhOw1vDjRpYMBLMCyVlYJwo2X9L%2F33SVQ8mAfIkj%2B71%2B6zOlB7bsFWfBxuI35VVILZNFOQmWy002yXew75J%2FPg7wxm9rXjlKGB222MimwHqpmdjbUms7Wg8hzWh0cRa9BykPZjvAn%2BUJ30lj2REHbVjK08N4iQ8GXwOS7gH1FKygYk3HdO%2FX9WZt%2FatrKTwCuTuvbClr2bJjlciNzvrXlsu0oPuhYrffrvpOqrTjG46F2WLbVrVGl1AyL8arrH7anvKH%2BLyg3emfWQFqFlLkAxmq1TaV4uCxJ%2F9GhJD0oatKtsj6vqShOu09FnRpKLXPatwiW2PNeQmoAg8IABk33u35VZVd7%2FeM32RGzwPkTrQeuNeFpVZiHP6BEaWUtXXcL4QGwnCaAWHn4I3%2BElClFYWRMpyzcEkNG2UqU2bE2FtYkwxALrOwly%2FH2pCWLJfcEiudTkIZ1rt6nyTqlVXevoYiyPmX8VRCCdl6GebXuXBT4irLyynFa2Ddyqpsi1sT1PASkFbsmJrXu5SuIvi0hh4TFQv6KQvySVUXwRAtqWAKDqMARNft%2F5l5SFSfFlrD7FkMTEmsh9ji5raBaw0pn%2BhExY8G2cKxLSn2Hu1buU5yj3qpHe%2FEwJ6qHOdY99MIXr7dXKmHs%2FpIuXXDWLgRiE36BcUcnrn%2BI89cRXk8VsCTpXOhHdfl5yE5epuRoU2bRnGrtg%2FU9ZSNQ3wV2bYRKovvoZGlkh35XpgPsOOQqAPdAb91J16SyYvVcwctpd1DF2tLVr69dZ26x2ccha9dOiqo7tnWjargUTQVhHp0vCOGNbWUmp12zZORiZ1LhHpqwnzQny4wBjD43eOm%2Bv57fkTNOFInwJ6paPzqtpqLpd4xD9Ja41wsc30bmXgrnq8P4VBgcJYQsCwNeyydKB8twUX4QMf6QJksWHYKbDaGL4N5EJGC8i8Zlw%2FqwChmy2vN9w7dE7%2BVyTVgJJFFkuC3L7NIFWBAlGa6fAIeHymV0rcdbPsYcaDJEyOb1CBl0%2FVBLsE7gGXoT0sr3Ifd27I1n475yB2qntm2VeZbWfXQOX9qRr2lC19Cl6BAqbr4mS6qRPv4%2F%3C%2Fdiagram%3E%3C%2Fmxfile%3E" class="gx-page-link py-[12px] capitalize font-normal bg-[#fff] text-[#555] hover:text-[#921c1cdd] text-[14px] leading-[18px] flex items-center">
+												<i class="ri-star-smile-line text-[19px] mr-[10px]"></i><span class="condense"><span class="hover-title">More Info on Workflow</span> </span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="min-[1200px]:w-[75%] w-full px-[12px]">
+						<!-- Introduction -->
+						<div class="gx-block" style="page-break-after: always;">
+							<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_instructions">
+								<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+									<h1 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Introduction</h1>
+									<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+										<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+											<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+										</a>
+									</div>
+								</div>
+								<div class="gx-card-content md:p-[24px] p-[15px]">
+									<div class="intro">
+										
+										<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">Welcome to Planon Webhelp! This page will guide you on
+											how to log a request and how to use your Home-page on Planon</p>
+										<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]"> Planon - Self Service User Module</h4>
+										<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+											After you are registered to Planon and you were granted access. <br>
+											<b>Please follow the URL below to start with your profile setup:</b><br>
+											<a href="https://phambili.sun.ac.za/" class="hover:text-[#921c1cdd] py-[12px] font-light bg-[#fff] text-[#555] text-[13px] leading-[18px] flex items-center"><u>https://phambili.sun.ac.za</u></a>
+										</p>
+										<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+										<b>Login to Stellenbosch Planon with SUN username and password.</b>
+										<br>
+										<a href="https://phambili.sun.ac.za/" class="gx-btn-primary h-[35px] w-[200px] px-[15px] flex items-center justify-center bg-[#e7e7e7] text-[black] text-[14px] border-[1px] border-solid border-[#e7e7e7] rounded-[5px] cursor-pointer hover:bg-[#921c1cdd] hover:text-[white]">
+										Login
+										</a><br>
+										<img src="assets/img/server/12.png" class="img-fluid rounded-[5px]" alt="Responsive image">
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+							<!-- Gadget setup -->
+							<div class="gx-block" style="page-break-after: always;">
+								<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_gadget-setup">
+									<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+										<h1 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Gadget Setup</h1>
+										<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+											<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+												<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+											</a>
+										</div>
+									</div>
+									<div class="gx-card-content md:p-[24px] p-[15px]">
+										<div class="intro">
+											<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]"> Add the gadgets to your profile:</h4><br>
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Step 1:</b> Select the gadget wheel in the top right of the screen
+												<br>
+												<img class="img-fluid-[50px]" src="assets/img/server/edit.png" alt="edit">
+											</p>
+
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Step 2:</b> Select the relevant gadgets that will add the Self-Service Form to your profile
+												<br>
+												<img src="assets/img/server/add.png" alt="add" class="img-fluid-[50px]">
+											</p>
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Step 3:</b> Close the gadget wheel drop down.
+												<br>
+												<img src="assets/img/server/close.png" alt="close" class="img-fluid-[50px]">
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- My User Profile -->
+							<div class="gx-block" style="page-break-after: always;">
+									<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_MyUser_PROFILE">
+										<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+										<h1 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">My User Profile:</h1>
+										<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+											<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+												<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+											</a>
+										</div>
+									</div>
+									<div class="gx-card-content md:p-[24px] p-[15px]">
+										<div class="intro">	
+											<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]">Gadgets on the Home-page:</h4>	<br>									
+												<div class="image-with-text">
+													<img src="assets/img/server/RM.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[400px] h-[560px] mb-[20px] m-[5px]" alt="Thumbnail image">
+													<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+														<b>Reactive Maintenance-gadget :</b> <br>
+														This is where you log your maintenance requests. 
+													</p>
+												</div><br>
+												<hr>
+												<br>
+												<div class="image-with-text">
+													<img src="assets/img/server/CP.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[400px] h-[300px] mb-[20px] m-[5px] " alt="Thumbnail image">
+													<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+														<b>Advisory Request :</b><br>
+														Advice request/required on a planned maintenance project.<br><br>
+														<b>Capital Project Request :</b> <br>
+														This is Where you register large projects that require an entire project team. 
+														
+													</p>
+												</div><br>
+												<hr>
+												<br>
+												<div class="image-with-text">
+													<img src="assets/img/server/MyRQ.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[400px] h-[300px] mb-[20px] m-[5px]" alt="Thumbnail image">
+													<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+														<b>My Requests-gadget :</b> <br>
+														This is where you search your request <br>
+													</p>
+												</div><br>
+												<hr><br>
+												<div class="image-with-text">
+													<img src="assets/img/server/MW.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[350px] h-[300px] mb-[30px]" alt="Thumbnail image">
+													<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+														<b>Minor Works Request :</b> <br>
+														This is where you log request for new installation, minor renovations and Small projects on your Reactive Maintenance-gadget
+													</p>
+												</div><br>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Process&Workflows -->
+								<div class="gx-block" style="page-break-after: always;">
+									<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_process_workflows">
+										<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+											<h1 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Process and Workflows</h1>
+											<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+												<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+													<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+												</a>
+											</div>
+										</div>
+										<div class="gx-card-content md:p-[24px] p-[15px]">
+											<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]"> Process and Workflows</h4><br>
+											<div class="intro">
+												<table>
+													<tr>
+													  <th>Role</th>
+													  <th>Responsible Person</th>
+													  <th>Contact Address</th>
+													</tr>
+
+													<tr>
+													  <td>Requestor</td>
+													  <td>You</td>
+													  <td></td>
+													</tr>
+
+													<tr>
+													  <td>Assistance</td>
+													  <td>FM Service Desk</td>
+													  <td>Ext 4666/ fmhelpdesk@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>1st Line Check</td>
+														<td>FM Service Desk</td>
+														<td>Ext 4666/ fmhelpdesk@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>Estimation</td>
+														<td>Technician/ Team lead</td>
+														<td></td>
+													</tr>
+
+													<tr>
+														<td>Accept to be approved under R15 000</td>
+														<td>Nathalie Koen (FIN)</td>
+														<td>Ext 4659 / nkoen@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>Accept to be approved over R15 000</td>
+														<td>Annetjie Venter (FIN)</td>
+														<td>Ext 4912 / nkoen@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>Cc-owner Approval</td>
+														<td>Faculty / Departmental Cost Centre Owner</td>
+														<td></td>
+													</tr>
+
+													<tr>
+														<td>1st Line Problem Reporting (Systems & Maintenance queries)</td>
+														<td>FM Service Desk</td>
+														<td>Ext 4666/ fmhelpdesk@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>2nd Line Problem Reporting (Systems)</td>
+														<td>Ayanda Bangani; Jess Kruger</td>
+														<td>bagani@sun.ac.za/ jesskruger@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>3rd Line Problem Reporting (Service Desk Service delivery & Maintenance queries)</td>
+														<td>Claudette Mackriel</td>
+														<td>cmackriel@sun.ac.za</td>
+													</tr>
+
+													<tr>
+														<td>4th Line Problem Reporting (Systems)</td>
+														<td>ICT Task Team</td>
+														<td></td>
+													</tr>
+												</table>
+												<br>
+												<img class="img-fluid rounded-[50px] border-solid border-[#dee2e6] " src="assets/img/server/Workflow.png" alt="Xampp">
+											</div>
+										</div>
+									</div>
+								</div>	
+						<!-- Starter Page -->
+						<div class="gx-block" style="page-break-after: always;">
+							<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" >
+								<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+									<h1 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]">Logging a Request :</h1>
+									<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+										<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+											<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+										</a> 
+									</div>
+								</div>
+
+								<div class="gx-card-content md:p-[24px] p-[15px]">
+									<!-- Presentation code -->
+									<h4 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default" id="gx_RM"  > How to Submit a Reactive Maintenance Request (RM) in Planon:</h4><br>															
+										<div class="tabs_wrapper">
+											<ul class="tabs inline-flex w-full border-b">
+												<li class="px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer active" id="tab3"><i class="ri-eye-line mr-[5px]"></i>Request-Gadget</li>
+												<li class="px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer" id="tab4"><i class="ri-code-s-slash-line mr-[5px]"></i>Request Fields</li>
+											</ul>
+											<div class="tabs_container">
+												<div class="tab_content w-full pt-[30px] active" data-tab="tab3">
+													<div class="image-with-text">
+														<img class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[475px] h-[600px] mb-[20px] m-[5px]" src="assets/img/server/RM.png" alt="Xampp">															
+														<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+															<b>Before Logging a request:</b><br>
+															Understand the details of Incident/Request. This will help you to choose the exact type of service category on the request gadget
+														</p>
+													</div>
+												</div>
+												<div class="tab_content w-full pt-[30px]" data-tab="tab4">
+													<div class="image-with-text">
+														<img class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] img-fluid w-[550px] h-[800px] mb-[20px] m-[5px]" src="assets/img/server/RQ.png" alt="Xampp">															
+													<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">	
+														<ul >
+															<b>Need to know :</b><br>	
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold"> Requester:</strong>
+																The person who logs the request is the requestor
+															</li>
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold"> On behalf :</strong>
+																Colleague who reported the request. (Requestor can also be the On Behalf-person)
+															</li>
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold"> Location & Space:</strong>
+																Use the exact building and space where maintenance is required</li>
+															<li>
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold "> Cost Centre Information :</strong> New installations only</li><br>
+															<hr>
+															<br>
+															<b>Request Information</b><br>
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold "> Questionaire:</strong>
+																Answer the questions which applies to incident or request. This will help you with the comment-section of request form.
+															</li>
+															<li >
+																<i class="ri-record-circle-line"></i>
+																<strong class="font-semibold "> Comment Section:</strong>
+																Ensure that you give a short but comprehensive explanation of the maintenance required and include your contact information and alternative staff member's in case your not available.
+															</li><br>
+														<hr>
+														<br>
+														<b>Request Form completed?</b>
+														<li >
+															<strong class="font-semibold "> Submit-button:</strong><br>
+															Click on the button when all manadatory fields are filled in on request form. 
+														</li>
+														<br>
+														<i >
+															<b>Important: Location & Space</b><br>
+															<u>Tip:</u> Search using codes or by name or description.
+														</i>
+													</ul>
+													</p>
+												</div><br>
+											</div>
+											<hr><br>
+												<!-- Presentation code -->
+												<h4 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default" id="gx_CP"> How to Submit a Capital Project Request (CPR) in Planon:</h4><br>															
+													<div class="tabs_wrapper">
+														<ul class="tabs inline-flex w-full border-b">
+															<li class="px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer active" id="tab5"><i class="ri-eye-line mr-[5px]"></i>Capital Project Request-Gadget</li>
+															<li class="px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer" id="tab6"><i class="ri-code-s-slash-line mr-[5px]"></i>Mandatory Fields</li>
+														</ul>
+														<div class="tabs_container">
+															<div class="tab_content w-full pt-[30px] active" data-tab="tab5">
+																<div class="image-with-text">
+																	<img src="assets/img/server/CP.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[400px] h-[300px] mb-[20px] m-[5px] " alt="Thumbnail image">															
+																	<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+																		<b>Navigate to the CPR Section:</b><br>
+																		From the dashboard, locate and click on Capital Project Request by Faculties and Support Services.
+																	</p>
+																</div>
+															</div>
+															<div class="tab_content w-full pt-[30px]" data-tab="tab6">
+																<div class="image-with-text">
+																	<img class="p-[4px] border-[1px] border-solid w-[500px] border-[#dee2e6] rounded-[5px] img-fluid mb-[20px] m-[5px]" src="assets/img/server/CP_1.png" alt="Xampp">													
+																<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">	
+																	<ul >
+																		<b>Complete all mandatory fields :</b><br>
+																		<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light note mb-[30px] py-[10px] px-[15px] bg">
+																			<i >
+																				<b>For more results when searching</b><br>
+																				<strong class="font-semibold">Tip:</strong> Click on the show more button on selected field and it would give you more options to search for results 
+																			</i>
+																		</p><br>	
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold"> Requester:</strong>
+																			The person who logs the request is the requestor
+																		</li>
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold"> Department:</strong>
+																			The department requesting the project
+																		</li>
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold"> On Behalf Of:</strong>
+																			The person you are submitting the request for (if applicable)</li>
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold "> Cost Centre Information :</strong> 
+																			The relevant financial code for the project</li>
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Estimated Project Value: </strong> 
+																			An approximate value of the project</li>
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Signatory: </strong> 
+																			The authorized approver for the request</li>
+
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Space: </strong> 
+																			Specify the space of the property or site involved in the project</li>
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Description: </strong> 
+																			Provide a concise summary of the project</li>			
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Motivation and Alignment: </strong> 
+																			Explain the purpose and alignment with organizational goals</li>								
+
+																		
+																</p>
+															</div><br>
+															<div class="image-with-text">
+																<img class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[500px] img-fluid mb-[20px] m-[5px]" src="assets/img/server/CP_2.png" alt="Xampp">													
+															<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">	
+																<ul >
+																	<b>To include supporting documentation:</b><br>	
+																	<li >
+																		<i class="ri-record-circle-line"></i>
+																		<strong class="font-semibold"> Upload Section:</strong>
+																		Click Upload Documents and select the relevant files
+																	</li>
+
+															</p>
+														</div><br>
+														<div class="image-with-text">
+															<img class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[500px] img-fluid mb-[20px] m-[5px]" src="assets/img/server/CP_3.png" alt="Xampp">													
+														<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">	
+															<ul >
+																<b>Submit Your Request:</b><br>	
+																<li >
+																	<i class="ri-record-circle-line"></i>
+																	<strong class="font-semibold"> Submit-button:</strong>
+																	After filling out all fields, click Submit
+																</li> <br>
+														</p>
+													</div><br>
+													<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light note mb-[30px] py-[10px] px-[15px] bg">
+														<i >
+															<b>Important: Inform the Authorised Signatory</b><br>
+															<strong class="font-semibold"><u>Tip:</u></strong> Notify the designated Authorised Signatory that your request has been submitted and requires their approval in Planon
+														</i>
+													</p>
+													</div>
+													
+													</div><br>
+													<hr><br>
+													<h4 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default" id="gx_MW"> How to Submit a Minor Work Request (MWR) in Planon:</h4><br>
+													<div class="tabs_wrapper">
+														<ul class="tabs inline-flex w-full border-b">
+															<li class="px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer active" id="tab7"><i class="ri-eye-line mr-[5px]"></i>Minor Works Request</li>
+															<li class="px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer" id="tab8"><i class="ri-code-s-slash-line mr-[5px]"></i>Mandatory Fields</li>
+														</ul>
+														<div class="tabs_container">
+															<div class="tab_content w-full pt-[30px] active" data-tab="tab7">
+																<div class="image-with-text">
+																	<img src="assets/img/server/MW.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[400px] h-[300px] mb-[20px] m-[5px] " alt="Thumbnail image">															
+																	<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+																		<b>Navigate to the MWR Section:</b><br>
+																		From the Reactive Maintenance-gadget, locate and click on Minor Work Request.
+																	</p>
+																</div>
+															</div>
+															<div class="tab_content w-full pt-[30px]" data-tab="tab8">
+																<div class="image-with-text">
+																	<img class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[500px] img-fluid mb-[20px] m-[5px]" src="assets/img/server/MW_1.png" alt="Xampp">													
+																<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">	
+																	<ul >
+																		<b>Complete all mandatory fields :</b><br>
+																		<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light note mb-[30px] py-[10px] px-[15px] bg">
+																			<i >
+																				<b>For more results when searching</b><br>
+																				<strong class="font-semibold">Tip:</strong> Click on the show more button on selected field and it would give you more options to search for results 
+																			</i>
+																		</p><br>	
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold"> Requester:</strong>
+																			The person who logs the request is the requestor
+																		</li><br>
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Authorised Signatory: </strong> 
+																			The authorised approver for the request</li><br>
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Space: </strong> 
+																			Specify the space of the property or site involved in the project</li><br>
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold"> Related Advisory Order:</strong>
+																			If this Minor Works Request has already received advice. Please refer to the Advisory Order number indicated below for more information.
+																		</li><br>
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold "> Cost Centre Information :</strong> 
+																			The relevant financial code for the project</li><br>
+																			
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Comment: </strong> 
+																			Provide a concise summary of the project</li>			
+																		<br>
+																		<hr><br>
+																		<b>To include supporting documentation:</b><br>	
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold"> Upload Section:</strong>
+																			Click Upload Documents and select the relevant files
+																		</li><br>
+																		<hr><br>
+
+																		<b>Request Form completed?</b><br>	
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold"> Submit-button::</strong>
+																			Click on the button when all manadatory fields are filled in on request form.
+																		</li>
+																</p>
+															</div><br>
+														</div>
+														</div>
+														</div>
+													</div><br><hr><br>
+													<h4 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default" id="gx_AD">
+ 													 How to Submit an Advisory Request (ADR) in Planon:
+													</h4><br>
+													<div class="tabs_wrapper">
+														<!-- Tab navigation -->
+														<ul class="tabs inline-flex w-full border-b">
+														  <li class="tab px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer active" id="tab9" role="tab" aria-controls="content9">
+															<i class="ri-eye-line mr-[5px]"></i>Advisory Request
+														  </li>
+														  <li class="tab px-4 py-2 text-[#000] text-[14px] leading-[21px] tracking-[0.01rem] font-light cursor-pointer" id="tab10" role="tab" aria-controls="content10">
+															<i class="ri-code-s-slash-line mr-[5px]"></i>Mandatory
+														  </li>
+														</ul>
+														<div class="tabs_container">
+															<div class="tab_content w-full pt-[30px] active" data-tab="tab9">
+																<div class="image-with-text">
+																	<img src="assets/img/server/CP.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[400px] h-[300px] mb-[20px] m-[5px] " alt="Thumbnail image">															
+																	<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+																		<b>Navigate to the CPR Section:</b><br>
+																		From the dashboard, locate and click on Advisory Request by Faculties and Support Services. Just keep in mind that this type of request is logged when architectural design input is required. It is not for any maintenance related requests, e.g. air-conditioning.
+																	</p>
+																</div>
+															</div>
+															<div class="tab_content w-full pt-[30px]" data-tab="tab10">
+																<div class="image-with-text">
+																	<img class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[500px] img-fluid mb-[20px] m-[5px]" src="assets/img/server/AD.png" alt="Xampp">													
+																<p lass="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">	
+																	<ul >
+																		<b>Complete all mandatory fields :</b><br>
+																		<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light note mb-[30px] py-[10px] px-[15px] bg">
+																			<i >
+																				<b>For more results when searching</b><br>
+																				<strong class="font-semibold">Tip:</strong> Click on the show more button on selected field and it would give you more options to search for results 
+																			</i>
+																		</p><br>	
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold"> Requester:</strong>
+																			The person who logs the request is the requestor
+																		</li><br>
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">On Behalf Of:: </strong> 
+																			The person you are submitting the request for (if applicable)</li><br>
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Space: </strong> 
+																			Specify the space of the property or site involved in the project</li><br>	
+																		<li>
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold ">Description: </strong> 
+																			Provide a concise summary of the project</li>			
+																		<br>
+																		<hr><br>
+																		<b>Request Form completed?</b><br>	
+																		<li >
+																			<i class="ri-record-circle-line"></i>
+																			<strong class="font-semibold"> Submit-button::</strong>
+																			Click on the button when all manadatory fields are filled in on request form.
+																		</li>
+																</p>
+															</div><br>
+														</div>
+													</div>
+													</div>
+												</div>
+											</div>		
+										</div>
+									</div>
+								</div>
+						<!--Notifications-->
+						<div class="gx-block" style="page-break-after: always;">
+							<div class="gx-card gx-page-block mb-[24px] bg-[#fff] rounded-[5px]" id="gx_notifications">
+								<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+								<h1 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Notifications:</h1>
+								<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+									<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+										<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+									</a>
+								</div>
+							</div>
+							<div class="gx-card-content md:p-[24px] p-[15px]">
+								<div class="intro">	
+									<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]">Different Notifications received:</h4>	<br>									
+									<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light note mb-[30px] py-[10px] px-[15px] bg">
+										 <b><i class="ri-information-line"></i>  Need to know :</b><br>
+										 The requestor and the On Behalf of-person will receive a notification. So if you are both the requestor and the On Behalf of-person, you will receive two notifications instead of one..
+										</p><br>
+									<div class="image-with-text">
+											<img src="assets/img/server/reported.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[480px] h-[600px] mb-[20px] m-[5px]" alt="Thumbnail image">
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Reported :</b> <br>
+												Upon logging a request, you will receive a notification confirming that your request has been successfully logged.
+											</p>
+										</div><br>
+										<hr>
+										<br>
+										<div class="image-with-text">
+											<img src="assets/img/server/cc-owner.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[480px] h-[600px] mb-[20px] m-[5px] " alt="Thumbnail image">
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Cc-owner Approved :</b><br>
+												This notification confirms that the CC-owner has approved your order.<br><br>
+											</p>
+										</div><br>
+										<hr>
+										<br>
+										<div class="image-with-text">
+											<img src="assets/img/server/cancel.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[480px] h-[600px] mb-[20px] m-[5px]" alt="Thumbnail image">
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Cancelled :</b> <br>
+												This notification informs you that your request has been cancelled. 
+												Should you have any questions, please contact the service desk. <br>
+											</p>
+										</div><br>
+										<hr><br>
+										<div class="image-with-text">
+											<img src="assets/img/server/complete.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[480px] h-[600px] mb-[20px] m-[5px]" alt="Thumbnail image">
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Complete :</b> <br>
+												This notification confirms that your request has been administratively completed by FM,
+												 indicating that all payments and work have been successfully processed.
+											</p>
+										</div><br>
+										<hr><br>
+										<div class="image-with-text">
+											<img src="assets/img/server/Feedback.png" class="p-[4px] border-[1px] border-solid border-[#dee2e6] rounded-[5px] w-[600px] h-[600px] mb-[20px] m-[5px]" alt="Thumbnail image">
+											<p class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light mb-[16px]">
+												<b>Feedback-tool :</b> <br>
+												This notification will be sent out as soon as the technician has completed the job.
+												Upon receiving this notification, you may respond to indicate your satisfaction with the work performed.
+												Additionally, you have the option to leave a comment explaining the reason for your feedback.
+											</p>
+										</div><br>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Customization -->
+							<div class="gx-block" style="page-break-after: always;">
+								<div class="gx-card gx-page-block server m-b-24 bg-[#fff] rounded-[5px]" id="gx_struggeling">
+									<div class="gx-card-header header-575 p-[24px] border-b-[1px] border-solid border-[#eee] flex flex-row justify-between items-center">
+										<h4 class="m-0 text-[18px] leading-[1.2] text-[#484d54] font-bold capitalize flex items-center cursor-default">Following up/ Escalate with a Request:</h4>
+										<div class="header-tools h-[30px] flex flex-row items-center justify-center">
+											<a href="javascript:void(0)" class="mr-[10px] gx-full-card w-[30px] h-[30px] flex items-center justify-center text-[#777] border-[1px] border-solid border-[#eee] rounded-[5px]">
+												<i class="ri-fullscreen-line text-[#777]" title="Full Screen"></i>
+											</a>
+										</div>
+									</div>
+									<div class="gx-card-content md:p-[24px] p-[15px]">
+										<h4 class="text-[28px] font-semibold text-[#484d54] leading-[1.2] mb-[8px]">Contact Us:</h4>
+										<ul class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light note mb-[15px]">
+											<b>Follow-up with FM Service Desk</b><br>
+											<li>
+											<i class="ri-record-circle-line"></i>	
+											<strong class="font-semibold ">Phone :</strong><br>
+											021 808 4666
+											</li>
+											<li>
+											<i class="ri-record-circle-line"></i>
+											<strong class="font-semibold ">Email :</strong> <br>
+
+											<a href="mailto:fmhelpdesk@sun.ac.za?subject=Follow-up ..." class="h-[35px] w-[200px] px-[15px] flex items-center justify-center bg-[#e7e7e7] text-[black] text-[14px] border-[1px] border-solid border-[#e7e7e7] rounded-[5px] cursor-pointer hover:bg-[#921c1cdd] hover:text-[white]">fmhelpdesk@sun.ac.za</a> 
+											With the Subject line “Follow-up” with the reference number:<br>
+											<strong class="font-semibold ">Preferred</strong> – Email for tracking purposes. Always include reference numbers.
+											</li><br>
+										</ul>
+										<ul class="text-[14px] text-[#777] leading-[28px] tracking-[0.03rem] font-light note mb-[15px]">
+											<b>Escalation: Feedback unsatisfactory</b><br>
+											<li>
+											<i class="ri-record-circle-line"></i>
+											<strong class="font-semibold ">Email :</strong> <br>
+											<a href="mailto:fmhelpdesk@sun.ac.za?subject=Query escalation / Complaint ..." class="gx-btn-primary h-[35px] w-[200px] px-[15px] flex items-center justify-center bg-[#e7e7e7] text-[black] text-[14px] border-[1px] border-solid border-[#e7e7e7] rounded-[5px] cursor-pointer hover:bg-[#921c1cdd] hover:text-[white]">fmhelpdesk@sun.ac.za</a> 
+											With the Subject line “Query escalation / Complaint” with reference number:<br>
+											<strong class="font-semibold ">Preferred</strong> – Email for tracking purposes. Always include reference numbers.
+											</li><br>
+											<li>
+												<i class="ri-information-line"></i><strong class="font-semibold ">Obtaining feedback may take some time. Please be patient with us</strong>
+											</li>
+										</ul>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Vendor Custom -->
+	<script src="assets/js/vendor/jquery-3.6.4.min.js"></script>
+	<script src="assets/js/vendor/prism.js"></script>
+	<!-- Main Custom -->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
